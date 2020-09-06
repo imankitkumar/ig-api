@@ -7,8 +7,11 @@ app.listen(3000);
 
 app.get('/api/v1',async (req, res) => {
 
-res.send(await prv.data(req.query.url));
-   
+res.send(
+
+await prv.data(req.query.url)
+
+); 
 });
 
 app.use((req, res) => {
